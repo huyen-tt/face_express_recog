@@ -1,0 +1,15 @@
+/darknet/data/
+/darknet/widerface_result/
+/darknet/backup/
+/face_detect/data/FDDB/
+/face_detect/data/widerface/
+/face_detect/weights/
+/face_detect/widerface_evaluate/widerface_txt_batch8/
+/face_expression/RAF_DB/boundingbox/
+/face_expression/RAF_DB/datasets/
+/face_expression/RAF_DB/models/
+/face_expression/RAF_DB/aligned.zip
+/face_expression/RAF_DB/boundingbox.zip
+/face_expression/RAF_DB/original.zip
+/face_expression/RAF_DB/apex/
+/image/
