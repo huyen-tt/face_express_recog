@@ -67,7 +67,6 @@ class Amend_raf(nn.Module):  # moren
         x = self.bn(mask)
         global_mean = x.mean(dim=[0, 1])
         xmean = torch.mean(x, 1, keepdim=True)
-        xmin, _ = torch.min(x, 1, keepdim=True)
         x = xmean + self.alpha * global_mean
 
         return x, self.alpha
