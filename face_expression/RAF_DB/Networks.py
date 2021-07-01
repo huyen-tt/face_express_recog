@@ -65,7 +65,6 @@ class Amend_raf(nn.Module):  # moren
             createVar['x' + str(i)] = self.de_albino(createVar['x' + str(i)])
             mask = torch.cat((mask, createVar['x' + str(i)]), 1)
         x = self.bn(mask)
-        xmax, _ = torch.max(x, 1, keepdim=True)
         global_mean = x.mean(dim=[0, 1])
         xmean = torch.mean(x, 1, keepdim=True)
         xmin, _ = torch.min(x, 1, keepdim=True)
