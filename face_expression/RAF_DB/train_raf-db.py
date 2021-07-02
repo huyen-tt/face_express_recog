@@ -75,7 +75,7 @@ class RafDataSet(data.Dataset):
 def run_training():
     args = parse_args()
 
-    model = Networks.ResNet18()
+    model = Networks.ResNet18_ARM___RAF()
     # print(model)
     print("batch_size:", args.batch_size)
             
